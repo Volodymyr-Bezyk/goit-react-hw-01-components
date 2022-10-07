@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
+import { Box } from 'components/Box';
 import {
-  Description,
-  Wrapper,
   Name,
   Picture,
   Tag,
@@ -22,13 +21,29 @@ export function Profile({
   likes,
 }) {
   return (
-    <Wrapper>
-      <Description>
+    <Box
+      width="min"
+      ml={0}
+      mr={0}
+      p={5}
+      border="custom"
+      borderColor="accent"
+      borderTopLeftRadius="primary"
+      borderBottomRightRadius="primary"
+      backgroundColor="bg"
+    >
+      <Box
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+        color="text"
+      >
         <Picture src={avatar} alt={username} width="300" />
         <Name>{username}</Name>
         <Tag>{tag}</Tag>
         <Location>{location}</Location>
-      </Description>
+      </Box>
 
       <StatsList>
         <StatsItem>
@@ -44,7 +59,7 @@ export function Profile({
           <StatsQuantity>{likes}</StatsQuantity>
         </StatsItem>
       </StatsList>
-    </Wrapper>
+    </Box>
   );
 }
 

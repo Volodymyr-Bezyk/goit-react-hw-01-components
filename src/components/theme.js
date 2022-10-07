@@ -37,4 +37,7 @@ export const theme = {
       mb: 2,
     },
   },
+  borders: {
+    custom: '1px solid',
+  },
 };

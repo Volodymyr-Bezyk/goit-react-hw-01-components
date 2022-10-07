@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
 import {
-  Block,
   Title,
   StatList,
   StatItem,
   StatName,
   StatValue,
 } from './Statistics.styled';
+import { Box } from 'components/Box';
 
 export function Statistics({ title, stats }) {
   return (
-    <Block>
+    <Box textAlign="center">
       {title && <Title>{title}</Title>}
 
       <StatList>
@@ -21,7 +21,7 @@ export function Statistics({ title, stats }) {
           </StatItem>
         ))}
       </StatList>
-    </Block>
+    </Box>
   );
 }
 

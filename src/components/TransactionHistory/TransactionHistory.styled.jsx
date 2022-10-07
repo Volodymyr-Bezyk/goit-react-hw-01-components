@@ -1,11 +1,5 @@
 import styled from 'styled-components';
 
-export const Table = styled.table`
-  margin-left: auto;
-  margin-right: auto;
-  width: ${p => p.theme.sizes.opt};
-  padding: ${p => p.theme.space[3]}px;
-`;
 export const TableHeading = styled.th`
   background-color: ${p => p.theme.colors.accent};
   font-size: ${p => p.theme.fontSizes[3]}px;

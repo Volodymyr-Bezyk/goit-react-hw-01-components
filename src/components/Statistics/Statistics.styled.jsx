@@ -1,9 +1,6 @@
 import styled from 'styled-components';
 import { getRandomColor } from 'utils/getRandomColor';
 
-export const Block = styled.section`
-  text-align: center;
-`;
 export const Title = styled.h2`
   font-size: ${p => p.theme.styles.h1.fz}px;
   font-weight: ${p => p.theme.styles.h1.fontWeight};

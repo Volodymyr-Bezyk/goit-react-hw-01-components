@@ -1,23 +1,5 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.div`
-  width: ${p => p.theme.sizes.min};
-  margin-left: ${p => p.theme.space[0]};
-  margin-right: ${p => p.theme.space[0]};
-  padding: ${p => p.theme.space[5]}px;
-  border: 1px solid ${p => p.theme.colors.accent};
-  border-top-left-radius: ${p => p.theme.radii.primary};
-  border-bottom-right-radius: ${p => p.theme.radii.primary};
-  background-color: ${props => props.theme.colors.bg};
-`;
-
-export const Description = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: ${p => p.theme.colors.text};
-`;
 export const Picture = styled.img`
   max-width: ${p => p.theme.sizes.full};
   height: ${p => p.theme.sizes.auto};

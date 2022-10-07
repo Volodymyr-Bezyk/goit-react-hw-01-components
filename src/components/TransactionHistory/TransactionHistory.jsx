@@ -5,10 +5,11 @@ import {
   TableRow,
   TableBlock,
 } from './TransactionHistory.styled';
+import { Box } from 'components/Box';
 
 export function TransactionHistory({ items }) {
   return (
-    <Table>
+    <Box as="table" ml={0} mr={0} width="opt" p={3}>
       <thead>
         <TableRow>
           <TableHeading>Type</TableHeading>
@@ -26,7 +27,7 @@ export function TransactionHistory({ items }) {
           </TableRow>
         ))}
       </tbody>
-    </Table>
+    </Box>
   );
 }
 
