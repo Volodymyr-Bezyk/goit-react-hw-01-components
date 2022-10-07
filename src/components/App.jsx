@@ -11,7 +11,7 @@ import transactions from 'database/transactions.json';
 export const App = () => {
   return (
     <div>
-      <Profile
+      {/* <Profile
         username={userData.username}
         tag={userData.tag}
         location={userData.location}
@@ -19,7 +19,7 @@ export const App = () => {
         followers={userData.stats.followers}
         views={userData.stats.views}
         likes={userData.stats.likes}
-      ></Profile>
+      ></Profile> */}
 
       <Statistics title="Upload stats" stats={stats}></Statistics>
       <Statistics stats={stats}></Statistics>
