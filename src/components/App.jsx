@@ -21,12 +21,12 @@ export const App = () => {
         likes={userData.stats.likes}
       ></Profile>
 
-      {/* <Statistics title="User stats" stats={stats}></Statistics>
-      <Statistics stats={stats}></Statistics> */}
+      <Statistics title="Upload stats" stats={stats}></Statistics>
+      <Statistics stats={stats}></Statistics>
 
-      {/* <FriendList friends={friends}></FriendList> */}
+      <FriendList friends={friends}></FriendList>
 
-      {/* <TransactionHistory items={transactions}></TransactionHistory> */}
+      <TransactionHistory items={transactions}></TransactionHistory>
     </div>
   );
 };
